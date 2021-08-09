@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         org.greenrobot.eventbus.EventBus.getDefault().post(event_Bus5);
                         break;
                     default:
-                        return false;
+                        return false;//
                 }
                 return false;
             });
