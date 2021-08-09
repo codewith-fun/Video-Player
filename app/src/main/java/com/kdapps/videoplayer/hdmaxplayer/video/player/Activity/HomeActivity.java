@@ -150,6 +150,8 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                     case R.id.nav_video:
                         HomeActivity.this.viewpager.setCurrentItem(1);
                         break;
+                    default:
+                        return false;
                 }// all remove from here
                 HomeActivity.this.backhide.closeDrawer(GravityCompat.START);
                 return false;
