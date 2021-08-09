@@ -218,7 +218,10 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                         event_Bus5.setValue(0);
                         org.greenrobot.eventbus.EventBus.getDefault().post(event_Bus5);
                         break;
+                    default:
+                        return false;
                 }
+
                 return false;
             });
             popupMenu.show();
